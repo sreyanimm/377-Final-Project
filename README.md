@@ -10,7 +10,7 @@ The isQuit function checks if the command is "quit". This function uses the strc
 
 The isPipe function checks if there is a command "|" to indicate this command is being piped. This function takes in two parameters, which are cmd and cmdTokens. The function then loops through the command tokens (cmdTokens) to check if any of them are "|". This is done using the strcmp function. If this command is found, the function returns true. Else, the function returns false.
 
-The main function uses all of these functions to run the program. The main function will first parse the commands into separate tokens. It will then check if 
+The main function uses all of these functions to run the program. The main function will first parse the commands into separate tokens. It will then check if the command is "quit" and exit if it is. Otherwise, the function will next check if we have a pipe command using the isPipe function. If so, it will execute the commands. Else, the function will execute the given command and exit.
 
 
 Presentation video link: https://drive.google.com/file/d/15PTYC_elsKUMFCgAF4ClB8cbEsx_8GvI/view?usp=share_link
